@@ -63,7 +63,7 @@ class KohyaHiresFix(scripts.Script):
         
         ui = [enable, only_one_pass, d1, d2, s1, s2, scaler, downscale, upscale, smooth_scaling, early_out]
         for elem in ui:
-            setattr(elem, "do_not_save_to_config", True)
+            setattr(elem, "do_not_save_to_config", False)
 
         parameters = {
             'DSHF_s1': s1,
